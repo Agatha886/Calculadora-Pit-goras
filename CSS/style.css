@@ -38,13 +38,12 @@ img{
 
 /* Medias */
 
-
 @media(min-width: 576px){ /* sm  → tela de no mínimo 576px de largura*/
     .container{
         width: 540px;
     }
     .parteDeCima {
-        height: 110vh;
+        height: 140vh;
     }
     .button{
         margin-left: -10px;
