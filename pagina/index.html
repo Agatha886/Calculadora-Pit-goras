@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Pitágora</title>
+    <link rel="stylesheet" href="../Nomarlize/normalize.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+
+</head>
+<body>
+    
+    <header>
+    <div class="container">
+        <nav class="menu-principal" >
+            <ul class="menu-principal__lista menu__--fechado">
+                <li class="menu-principal__iten"><a class="menu-principal__iten btnTeorema">O Teorema</a></li>
+                <li class="menu-principal__iten"><a class="menu-principal__iten btnComo">Como funciona a Calculadora?</a></li>
+            </ul>
+    </ul>
+        </nav>
+    </div>
+</header>
+    <section class=" container">  
+        <section id="teorema" class="pag__teorema pag__teoremaFechado">
+            <button value="digite" class="buttonTeroriaFechar buttonTeoriaFecharFechado">FECHAR</button>
+            <h2 class="tituloTeorema tituloTeoremaFechado">O TEOREMA DE PITÁGORAS</h2>
+            <p class="textTeorema">O teorema de Pitágoras relaciona as medidas dos lados de um triângulo retângulo da seguinte maneira:
+            Em um triângulo retângulo, o quadrado da hipotenusa é igual à soma dos quadrados dos catetos.</p>
+            <section class="textFormula">
+                <h2 class="tituloFormula">Fórmula do teorema de Pitágoras</h2>
+                <p class="textTeorema">O maior lado do triângulo fica sempre oposto ao maior ângulo, que é o ângulo de 90°. Esse lado recebe o nome de hipotenusa e será representado aqui pela letra a.
+                Os demais lados do triângulo são chamados de catetos e serão aqui representados pelas letras b e c.</p>
+                <p class="textTeorema">O teorema de Pitágoras afirma que é válida a relação a seguir:</p>
+                <p class="formulaTeorema">a^2 = b^2 + c^2</p>
+                <p class="textTeorema">Assim, podemos dizer que o quadrado da medida da hipotenusa é igual à soma dos quadrados das medidas dos catetos.</p>
+            </section>
+            <section class="imgTeorema">
+                <img src="../CSS\imagens/440px-Pythagorean.svg.png" alt="imagem triângulo"  class="imgTriangulo">
+            </section>
+            <nobr class="textTeoremaLink ">LUIZ, Robson. "Teorema de Pitágoras"; Brasil Escola. Disponível em: </nobr>
+            <a href="https://brasilescola.uol.com.br/matematica/teorema-pitagoras.htm#:~:text=O%20teorema%20de%20Pit%C3%A1goras%20relaciona,soma%20dos%20quadrados%20dos%20catetos.&text=O%20teorema%20de%20Pit%C3%A1goras%20%C3%A9,influenciado%20outros%20grandes%20resultados%20matem%C3%A1ticos." target="_blank" class="textTeoremaLink linkTeorema">Site Brasil Escola</a>
+        </section> 
+        
+        <section class="pag__como pag__comoFechado"> 
+            <button value="digite" class="butnComoFechar butnComoFecharFechado">FECHAR</button>
+            <h2 class="tituloComo tituloComoFechado">Como funciona a Calculadora?</h2>
+            <section class="textComo">
+            
+                <p class="textExpli">Coloque os números nos campos: B(Cateto 1) e C(Cateto 2).</p>
+                <p class="textExpli">A seguir clique no botão RESULTADO. Aparecerá o resultado  à esquerda onde estava a foto de base para o cálculo.</p>
+                <p class="textExpli">Clique em Limpar para limpar todos os campos.</p>
+                
+            </section>
+            <section class="imgTeorema">
+                <img src="../CSS/imagens/explicação.png" alt="imagem explicação"  class="imgExpli">
+            </section>
+            <nobr class="textExpliLink ">Em caso de dúvida consulte ao cálculo pelo texto:</nobr>
+            <a href="#teorema" class="textExpliLink linkTeorema linkComo">O TEOREMA DE PITÁGORAS</a>
+        </section> 
+
+
+        <div class="parteDeCima parteDeCimaFechada">
+            <div> 
+                    <h1 class="subTitulo">TEOREMA DE PITÁGORAS</h1>
+                    <h1 class="titulo">CALCULAR</h1>
+            </div>
+
+        <div class="style pagina__conteúdo">
+                <img src="../CSS/imagens/Triangulo.png" alt="imagem triangulo Retangulo"  class="imgAberto imgFechado ">
+                    <div class="calcFechado calcEscrito">
+                        <p class="tituloresultado tituloresultadoFechado">RESULTADO</p>
+                        <p class="resultado resultadoFechado" id="resultado"></p>
+                        <div class="calculo calcFechado ">
+                        <p>a^2 = b^2 + c^2</p>
+                        <nobr>a^2 = </nobr>
+                        <nobr id="B"></nobr>
+                        <nobr>^2 + </nobr>
+                        <nobr id="C"></nobr>
+                        <nobr>^2</nobr>
+                        <p>a^2 = 
+                            <nobr class="ElevadoB"></nobr>
+                            <nobr> + </nobr> 
+                            <nobr class="ElevadoC"></nobr>
+                        </p>
+                        <p>a^2 = <nobr class="SomaCatetos"></nobr></p>
+                        <p>a = √<nobr id="SomaCatetos"></nobr></p>
+                        <p><nobr>a = </nobr><nobr class="Res" id="Res"></nobr></p>
+                        </div>
+                    </div>
+        </div>
+        <div class="calculadora pagina__conteúdo">
+    
+                    <div class="calculadoraItem1">
+                    <p class="erroNumAberto erroNumFechado">Entre com os Números!!</p>
+                    <h2 class="catTitulo">B (Cateto 1)</h2>
+                    <input class="num1" id="catetoB" type="number"><br>
+                    </div>
+                    <div class="calculadoraItem2">
+                    <h2 class="catTitulo">C (Cateto 2)</h2>
+                    <input class="num2" id="catetoC" type="number"><br>
+                    </div>
+                    
+                    <button value="digite" class="res__btn button">Resultado</button>
+                    <button value="digite" class="limpar__btn button">Limpar</button>
+                    </div>
+        </div>
+
+    </section>   
+            
+<script type="text/javascript" src="../javaScript/main.js"></script>
+</body>
+</html>
+
+        

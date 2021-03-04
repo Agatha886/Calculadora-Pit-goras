@@ -1,0 +1,716 @@
+
+@font-face{
+    font-family: "PRIMETIME";
+    src: url('../CSS/fonts/PRIMETIME\ ©\ PERSONAL\ USE\ ONLY.ttf');
+}
+
+@font-face{
+    font-family: "Source Sans Pro";
+    src: url('../CSS/fonts/SourceSansPro-Regular.otf');
+}
+
+
+@font-face{
+    font-family: "LEMONMILK";
+    src: url('../CSS/fonts/LEMONMILK-Regular.otf');
+}
+
+*{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    }
+
+
+/*Container*/
+.container{
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container_pag{
+    margin: 0px 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Medias */
+
+
+@media(min-width: 576px){ /* sm  → tela de no mínimo 576px de largura*/
+    .container{
+        width: 540px;
+    }
+    .parteDeCima {
+        height: 120vh;
+    }
+    .button{
+        margin-left: -10px;
+        margin-right: 15px;
+    }
+    .container_pag {
+        margin: 0px 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .calculadora{
+        float: right;
+        padding-top: -50px;
+        width: 50%;
+        position: relative;
+        top: 200px;
+        right: 80px;
+        
+    }
+    .style{
+        float: left;
+        width: 50%;
+        position: relative;
+        bottom: 100px;
+        right: -100px;
+    }
+    .menu-principal__iten{
+        text-align: center;
+    }
+
+    .subTitulo{
+        font-size: 15px;
+    }
+    .titulo{
+        font-size: 30px;
+    }
+    .tituloComo{
+        font-size: 20px;
+    }
+    .butnComoFechar{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    .textExpli{
+        font-size: 15px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        padding-left: 0px;
+        text-align: justify;
+    }
+    .imgExpli{
+        width: 100%;
+        margin-left: 10px;
+        margin-top: 40px;
+    }
+    .textComo{
+        width: 55%;
+        float: left;
+        padding-left: 10px;
+        padding-top: 30px;
+    }
+    .textExpliLink {
+        font-size: 15px;
+        position: relative;
+        top: 60px;
+        text-align: left;
+    }
+    .pag__teorema{
+        height: 600px;
+    }
+    .tituloTeorema {
+        font-size: 20px;
+    }
+    .buttonTeroriaFechar{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    .tituloFormula{
+        font-size: 15px;
+    }
+    .textFormula{
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+    .imgTriangulo {
+        width: 90%;
+        margin-left: 10px;
+        margin-top: 80px;
+    }
+    .tituloresultado {
+        top: 10px;
+        font-size: 25px;
+        padding-left: 15px;
+    }
+    .resultado {
+        top: 0px;
+    }
+    .calculo{
+        margin-bottom: 0; 
+        position: static;
+        font-size: 0;
+        color: transparent; 
+        height: 0;
+    }
+
+    .erroNumAberto {
+        font-family: "LEMONMILK";
+        background-color: transparent;
+        border: 2px solid #fd8918;
+        width: 50%;
+        padding: 10px 5px 10px 5px;
+        text-align: center;
+        border-radius: 10px;
+        margin-top: -100px;
+        font-size: 15px;
+        font-weight: bold;
+        color: #ce364f;
+    }
+    .calcEscrito {
+        background-color: #ce364f;
+        padding-top: 0;
+        padding-bottom: 0px;
+        padding-right: 20px;
+        border-radius: 10px;
+        text-align: center;
+        position: relative;
+        top: 50px;
+        width: 90%;
+        left: 20px;
+    }
+    .imgFechado {
+        height: auto;
+        width: 200%;
+        margin-top: -50px;
+        position: relative;
+        top: 120px;
+        left: 30px;
+    }
+    .menu-principal{
+        top: 40px;
+    }
+
+
+}
+@media(min-width:768px){ /* md → tela de no mínimo 768px de largura*/
+    .container{
+        width: 720px;
+    }
+
+    li[class="menu-principal__iten"]{
+        display: inline-block;
+        margin: 10px;
+    }
+    .menu-principal{
+        text-align: center;
+        margin: 10px;
+        
+    }
+    
+    .imgFechado {
+        margin-left: 100px;
+    }
+    .calcEscrito {
+        left: 110px;
+    }
+    
+}
+
+@media(min-width: 992px){ /* lg → tela de no mínimo 992px de largura*/
+    .container{
+        width: 960px;
+    }
+    .calculo{
+        margin-bottom: -100px;
+        position: relative;
+        top: -150px;
+        font-size: 20px;
+        color: #ffffff;
+        font-family: "LEMONMILK";
+    }
+    .subTitulo{
+        font-size: 15px;
+    }
+    .titulo{
+        font-size: 45px;
+    }
+    .style{
+        position:static;
+        float: left;
+        width: 40%;
+    }
+    .calculadora{
+        float: right;
+        padding-top: 50px;
+        width: 60%;
+        position: relative;
+        top: 30px;
+        right: -150px;
+    }
+
+    .button{
+        margin-left: 100px;
+        margin-right: -40px;
+    }
+
+    .tituloComo{
+        font-size: 30px;
+    }
+    .butnComoFechar{
+        margin-top: 0;
+        font-size: 15px;
+    }
+    .textExpli{
+        font-size: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-left: 40px;
+        text-align: justify;  
+    }
+    .imgExpli{
+        margin-top: 0;
+        width: 65%;
+        margin-left: 100px;
+    }
+    .textComo{
+        width: 55%;
+        float: left;
+        padding-left: 50px;
+        padding-top: 20px;
+    }
+    .textExpliLink{
+        font-size: 15px;
+        position: relative;
+        top: 50px;
+        text-align: left;
+    }
+    .tituloTeorema {
+        font-size: 30px;
+    }
+    .buttonTeroriaFechar{
+        margin-top: 0;
+        font-size: 15px;
+    }
+    .tituloFormula{
+        font-size: 20px;
+    }
+    .textFormula{
+        padding-left: 50px;
+        padding-top: 20px;
+    }
+    .pag__teorema{
+        height: 500px;
+    }
+    .imgTriangulo{
+        width: 70%;
+        margin-left: 90px;
+        margin-top: 0;
+    }
+    .resultado {
+        font-family: "LEMONMILK";
+        font-size: 20px;
+        position: relative;
+        top: -130px;
+        color: #ffffff;
+    }
+    .calcEscrito {
+        background-color: #ce364f;
+        padding-top: 120px;
+        padding-bottom: 230px;
+        padding-right: 20px;
+        border-radius: 10px;
+        text-align: center;
+        position: relative;
+        left: 80px;
+        top: -50px;
+    }
+    .tituloresultado {
+        top: -120px;
+        font-size: 35px;
+        padding-left: 0;
+    }
+    .resultado {
+        top: -130px;
+    }
+    .imgFechado {
+        margin-left: 30px;
+    }
+    .parteDeCima{
+        height: 100vh;
+    }
+    .menu-principal{
+        top: 50px;
+    }
+
+}
+@media(min-width: 1000px){  /* xl → tela de no mínimo 1000px de largura*/
+    .parteDeCima {
+        height: 100vh;
+    }
+    .pag__como {
+        height: 500px;
+        width: 100%;
+        background-color: #d9eedb;
+        padding: 20px;
+        margin-bottom: 150px;
+    }
+}
+@media(min-width: 1200px){  /* xl → tela de no mínimo 1200px de largura*/
+    .container{
+        width: 1140px;
+    }
+    .parteDeCima {
+        height: 100vh;
+    }
+    .calcEscrito{
+        background-color: #ce364f;
+        padding-top: 120px;
+        padding-bottom: 230px;
+        padding-right: 20px;
+        border-radius: 10px;
+        text-align: center;
+        position: relative;
+        top: 0;
+        left: 60px;
+    }
+    .resultado{
+        top: -140px;
+    }
+
+}
+
+header{
+    width: 100%;
+}
+
+.menu-principal__lista{
+    list-style: none;
+}
+.menu-principal__iten{
+    text-decoration: none;
+    font-weight: bold ;
+    color: #ffffff;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+}
+.menu-principal__iten:hover{
+    color: #ce364f;
+}
+
+/* Style dos elementos */
+
+body{
+    font-family: "Source Sans Pro";
+    background-color: #ffffff;
+    margin: auto;
+    background-image:url("../CSS/imagens/Render\ -\ Calculos\ Baixe\ Renders\ \(1\).png");
+}
+
+.button{
+    border: 3px solid #ce364f;
+    background-color: #ce364f;
+    color: #ffffff ;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    top: 40px;
+    font-size: 20px;
+    padding: 5px;
+}
+.buttonTeroriaFechar{
+    border: 3px solid #ce364f;
+    border-radius: 15px;
+    background-color: #ce364f;
+    color: #ffffff ;
+    cursor: pointer;
+    font-weight: bold;
+    float: right;
+    padding: 5px;
+}
+.buttonTeoriaFecharFechado{
+    width: 0;
+    height: 0;
+    border: transparent;
+    background-color: transparent;
+    color: transparent ;
+    font-size: 0;
+}
+.calcFechado{
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    display: block;
+    background: transparent;
+}
+
+.calculadoraItem1{
+    width: 150%;
+    margin-bottom: 50px;
+    margin-top: -50px;
+    margin-right: -50px;
+}
+.calculadoraItem2{
+    width: 150%;
+    margin-bottom: 20px;
+    margin-right: -50px;
+}
+
+.catTitulo{
+    font-family: "LEMONMILK";
+    color: #ce364f;
+}
+.erroNumAberto{
+    font-family: "LEMONMILK";
+    background-color:transparent ;
+    border: 2px solid #fd8918;
+    width: 50%;
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: -60px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ce364f;
+}
+.erroNumFechado{
+    background-color:transparent ;
+    font-size: 0;
+    border: 0;
+}
+
+.imgAberto{
+    height: 0;
+    width: 0;
+}
+.imgFechado{
+    height: auto;
+    width: 130%;
+    margin-top: -50px;
+    position: relative;
+    top: 100px;
+}
+
+.menu-principal{
+    background-color: #fd8918;
+    font-weight: bold;
+    font-family: "Source Sans Pro";
+    overflow: hidden;
+    width: 60%;
+    border-radius: 15px;
+    margin: 0 auto;
+    position: relative;
+}
+.menu-principalFechado{
+    background-color: #fd8918;
+    font-weight: bold;
+    font-family: "Source Sans Pro";
+    overflow: hidden;
+    width: 60%;
+    border-radius: 15px;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+}
+ul{
+    padding: 0;
+}
+.num1{
+    width: 50%;
+    height: 20%;
+    border: 2px solid #fd8918;
+    padding: 10px 5px;
+    border-radius: 5px;
+
+    /* Numeros*/
+    font-family: "LEMONMILK";
+    font-size: 20px;
+    color: #ce364f;
+
+}
+.num2{
+    width: 50%;
+    height: 20%;
+    border: 2px solid #fd8918;
+    border-radius: 5px;
+    padding: 10px 5px;
+
+    /* Numeros*/
+    font-family: "LEMONMILK";
+    font-size: 20px;
+    color: #ce364f;
+
+}
+
+.parteDeCima{
+    background-color: #d9eedb;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-right: 50px;
+    padding-left: 20px;
+    width: 100%;
+    position: relative;
+    top: -100px;
+    bottom: 10px;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 5px solid #fd8918;
+}
+
+
+.pagina__conteúdo{
+    margin-top: 50px;
+}
+.resultado{
+    font-family: "LEMONMILK";
+    font-size: 30px;
+    position: relative;
+    color: #ffffff;
+}
+.resultadoFechado{
+    font-size: 0;
+    height: 0;
+    width: 0;
+    color: transparent;
+}
+
+.subTitulo{
+    font-family:"PRIMETIME";
+    text-align: center;
+    color: #ce364f;
+}
+
+.titulo{
+    font-family:"PRIMETIME";
+    text-align: center;
+    color: #fd8918;
+    margin-top: 10px;
+}
+.tituloresultado{
+    margin-bottom: 10px;
+    position: relative;
+    font-family:"PRIMETIME";
+    color: #ffffff;
+}
+
+.tituloresultadoFechado{
+    font-size: 0;
+    height: 0;
+    width: 0;
+    color: transparent;
+}
+
+
+
+/* PAG Teorema */
+
+.pag__teorema{
+    width: 100%;
+    background-color: #d9eedb;
+    padding: 20px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    
+}
+
+.pag__teoremaFechado{
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+
+.linkTeorema{
+    color: #ce364f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.formulaTeorema{
+    color: #ce364f;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px ;
+    font-size: 20px;
+}
+
+.textFormula{
+    width: 55%;
+    float: left;
+}
+.textTeorema{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;  
+}
+.textTeoremaLink{
+    font-size: 15px;
+    position: relative;
+    top: 50px;
+    text-align: left;
+}
+.tituloFormula{
+    font-family: "LEMONMILK";
+    color: #ce364f;
+}
+.tituloTeorema{
+    font-family:"PRIMETIME";
+    text-align: center;
+    color: #fd8918;
+    margin-top: 10px;
+}
+.tituloTeoremaFechado{
+    color: transparent;
+    font-size: 0;
+}
+
+.imgTeorema{
+    width: 45%;
+    float: right;
+}
+
+/* PAG Como */
+.pag__como{
+    height: 500px;
+    width: 100%;
+    background-color: #d9eedb;
+    padding: 20px;
+    margin-bottom: 120px;
+    margin-top: -20px;
+    border-radius: 15px;
+}
+.pag__comoFechado{
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    background-color: transparent;
+    margin-bottom: 50px;
+}
+
+.tituloComo{
+    font-family:"PRIMETIME";
+    text-align: center;
+    color: #fd8918;
+    margin-top: 10px;
+}
+.tituloComoFechado{
+    color: transparent;
+    font-size: 0;
+}
+.butnComoFechar{
+    border: 3px solid #ce364f;
+    border-radius: 15px;
+    background-color: #ce364f;
+    color: #ffffff ;
+    cursor: pointer;
+    font-weight: bold;
+    float: right;
+    padding: 5px;
+}
+.butnComoFecharFechado{
+    width: 0;
+    height: 0;
+    border: transparent;
+    background-color: transparent;
+    color: transparent ;
+    font-size: 0;
+}
