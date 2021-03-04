@@ -44,7 +44,7 @@ img{
         width: 540px;
     }
     .parteDeCima {
-        height: 140vh;
+        height: 110vh;
     }
     .button{
         margin-left: -10px;
@@ -334,7 +334,7 @@ img{
         margin-left: 30px;
     }
     .parteDeCima{
-        height: 120vh;
+        height: 100%;
     }
     .menu-principal{
         top: 50px;
@@ -342,9 +342,6 @@ img{
 
 }
 @media(min-width: 1000px){  /* xl → tela de no mínimo 1000px de largura*/
-    .parteDeCima {
-        height: 130vh;
-    }
     .pag__como {
         height: 500px;
         width: 100%;
@@ -356,9 +353,6 @@ img{
 @media(min-width: 1200px){  /* xl → tela de no mínimo 1200px de largura*/
     .container{
         width: 1140px;
-    }
-    .parteDeCima {
-        height: 100%;
     }
     .calcEscrito{
         background-color: #ce364f;
@@ -418,6 +412,7 @@ body{
     top: 40px;
     font-size: 20px;
     padding: 5px;
+    margin-bottom: 100px;
 }
 .buttonTeroriaFechar{
     border: 3px solid #ce364f;
@@ -442,7 +437,9 @@ body{
     width: 0;
     overflow: hidden;
     display: block;
-    background: transparent;
+    background: red;
+    padding: 0;
+    
 }
 
 .calculadoraItem1{
