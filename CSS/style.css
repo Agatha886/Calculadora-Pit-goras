@@ -44,7 +44,7 @@ img{
         width: 540px;
     }
     .parteDeCima {
-        height: 120vh;
+        height: 130vh;
     }
     .button{
         margin-left: -10px;
@@ -243,6 +243,7 @@ img{
         position: relative;
         top: 30px;
         right: -150px;
+        
     }
 
     .button{
@@ -342,7 +343,7 @@ img{
 }
 @media(min-width: 1000px){  /* xl → tela de no mínimo 1000px de largura*/
     .parteDeCima {
-        height: 100vh;
+        height: 120vh;
     }
     .pag__como {
         height: 500px;
@@ -357,7 +358,7 @@ img{
         width: 1140px;
     }
     .parteDeCima {
-        height: 100vh;
+        height: 100%;
     }
     .calcEscrito{
         background-color: #ce364f;
@@ -369,9 +370,11 @@ img{
         position: relative;
         top: 0;
         left: 60px;
+        margin-bottom: 50px;
     }
     .resultado{
         top: -140px;
+        
     }
 
 }
@@ -564,6 +567,7 @@ ul{
     font-size: 30px;
     position: relative;
     color: #ffffff;
+    
 }
 .resultadoFechado{
     font-size: 0;
